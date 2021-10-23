@@ -276,7 +276,8 @@
             "resulting nuclear counterattack and ensuing full-scale nuclear "
             "war has plunged $PLANET into a state of nuclear winter from "
             "which it is unlikely that $CIV civilization will ever recover."]}
-
+   
+    
     :skynet
     {:name :skynet
      :prereqs #{:artificial-intelligence}
