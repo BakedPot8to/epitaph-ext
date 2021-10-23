@@ -1,7 +1,7 @@
 (ns epitaph.techs)
 
 (def all-techs
-  [{:name :toolmaking
+  [{:name :toolng
     :event-chances {:overhunting (/ +4 1000)
                     :overfishing (/ -3 1000)
                     :crop-failure (/ -3 1000)
