@@ -156,6 +156,11 @@
            "they primarily use $IN_CONTEXT."]
     :vocab {"$IN_CONTEXT" ["for explosive mining" "in warfare"]}}
 
+   {:name :metallurgy
+    :prereqs #{:metalworking :alchemy}
+    :desc ["The $CIV have developed methods of manufacturing stronger and more "
+           "malleable alloys."]}
+   
    {:name :the-printing-press
     :prereqs #{:architecture :metalworking}
     :set-vars {:tech-chance (/ 1 30)}
@@ -193,11 +198,11 @@
            "calculus."]}
 
    {:name :rocketry
-    :prereqs #{:calculus :gunpowder}
+    :prereqs #{:calculus :gunpowder :metallurgy}
     :desc ["The $CIV have begun to develop rockets."]}
 
    {:name :steam-power
-    :prereqs #{:architecture :mill-power}
+    :prereqs #{:architecture :mill-power :metallurgy}
     :desc ["The $CIV have developed a practical and cost-effective steam "
            "engine, which can be fueled with wood or coal."]}
 
@@ -284,19 +289,30 @@
     :desc ["The $CIV have begun to connect their computers into a single vast "
            "network, enabling communication and collaboration on a truly "
            "global scale."]}
-
-   {:name :artificial-intelligence
-    :prereqs #{:networked-computers}
-    :event-chances {:skynet (/ +1 180)}
-    :desc ["The $CIV have developed a form of artificial general intelligence "
-           "which rivals many of their own intellectual capabilities."]}
-
+      
    {:name :nanotechnology
     :prereqs #{:networked-computers :quantum-physics}
     :event-chances {:gray-goo (/ +1 180)}
     :desc ["The $CIV have begun to experiment with the use of \"intelligent "
            "materials\", in the form of swarms of programmable nanobots."]}
 
+   {:name :computronium
+    :prereqs #{:nanotechnology}
+    :desc ["The $CIV have begun manufacturing a form of intelligent matter "
+           "made of very densely packed computational elements, enabling the "
+           "consturction of vastly more powerful computers."]}
+   
+   {:name :plasma-physics
+     :prereqs #{:quantum-physics :networked-computers}
+     :desc ["The $CIV have arrived at a sophisticated understanding of "
+            "plasma and its properties in relations to physics."]
+   
+   {:name :artificial-intelligence
+    :prereqs #{:computronium :plasma-physics}
+    :event-chances {:skynet (/ +1 180)}
+    :desc ["The $CIV have developed a form of artificial general intelligence "
+           "which rivals many of their own intellectual capabilities."]}
+   
    {:name :space-colonization
     :prereqs #{:nanotechnology :networked-computers :spaceflight}
     :event-chances {:asteroid -1
@@ -309,7 +325,7 @@
            "civilization across multiple worlds greatly reduces the risk "
            "that they will collapse due to any crisis of merely planetary "
            "scale."]}
-
+   
    {:name :quantum-computers
     :prereqs #{:networked-computers :quantum-physics}
     :desc ["The $CIV have constructed their first cost-effective quantum "
