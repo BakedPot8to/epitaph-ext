@@ -305,7 +305,7 @@
    {:name :plasma-physics
      :prereqs #{:quantum-physics :networked-computers}
      :desc ["The $CIV have arrived at a sophisticated understanding of "
-            "plasma and its properties in relations to physics."]
+            "plasma and its properties in relations to physics."]}
    
    {:name :artificial-intelligence
     :prereqs #{:computronium :plasma-physics}
