@@ -1,6 +1,6 @@
 # Epitaph
 
-Epitaph is an idle game about existential risks and the death of civilizations. It was originally made for the [Fermi Paradox Jam](https://itch.io/jam/fermi-paradox-jam). You can [play it in your browser](https://mkremins.github.io/epitaph), or [check it out on itch.io](https://mkremins.itch.io/epitaph).
+Epitaph is an idle game about existential risks and the death of civilizations. It was originally made for the [Fermi Paradox Jam](https://itch.io/jam/fermi-paradox-jam) by @mkremins. You can [play it in your browser](https://mkremins.github.io/epitaph), or [check it out on itch.io](https://mkremins.itch.io/epitaph).
 
 From an implementation perspective, Epitaph is interesting mainly because it's a **browser game** written in **ClojureScript** that makes extensive use of **procedurally generated text** to tell an interactive story. It also uses [Om](https://github.com/omcljs/om) (a ClojureScript wrapper around [React](https://facebook.github.io/react/)) for rendering.
 
